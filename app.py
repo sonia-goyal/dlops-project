@@ -32,6 +32,7 @@ if text:
     print("running prediction")
     print(text)
     predictions, raw_outputs = model.predict([text])
+    print(predictions, raw_outputs)
     print(predictions[0])
     st.write("entities:")
     st.write(predictions[0])
