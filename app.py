@@ -30,7 +30,8 @@ model = load_model()
 if text:
     # Display a greeting with the user's name
     print("running prediction")
-    predictions, raw_outputs = model.predict(["I am travelling to India  and I work for Google", "I am a Microsoft employee"])
+    print(text)
+    predictions, raw_outputs = model.predict([text])
     print(predictions[0])
     st.write("entities:")
     st.write(predictions[0])
