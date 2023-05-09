@@ -1,1 +1,2 @@
 simpletransformers==0.63.11
+torch==2.0.0+cu118
