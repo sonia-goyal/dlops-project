@@ -10,7 +10,7 @@ st.subheader("Enter the text to be predicted")
 # Create a text input box for the user to enter their name
 text = st.text_input("text")
 
-#@st.cache_resource
+@st.cache_resource
 def load_model():
   mtype='xlmroberta'
   model_args = NERArgs()
