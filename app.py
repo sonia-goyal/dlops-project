@@ -31,7 +31,7 @@ if text:
     # Display a greeting with the user's name
     print("running prediction")
     print(text)
-    predictions, raw_outputs = model.predict([text])
+    predictions, raw_outputs = model.predict([text], use_multiprocessing=False)
     print(predictions, raw_outputs)
     print(predictions[0])
     st.write("entities:")
