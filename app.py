@@ -14,7 +14,7 @@ model_args = NERArgs()
 # model_args.num_train_epochs=20
 model_args.labels_list = ['O', 'B-geo', 'B-gpe', 'B-per', 'I-geo', 'B-org', 'I-org', 'B-tim', 'I-per', 'I-gpe', 'I-tim']
 # model_args.overwrite_output_dir = True
-model = NERModel(mtype,r"/content/gdrive/MyDrive/Models/checkpoint-7803-epoch-9",args=model_args,use_cuda=False)
+model = NERModel(mtype,r"model/",args=model_args,use_cuda=False)
 print("model loaded successfully")
 
 
